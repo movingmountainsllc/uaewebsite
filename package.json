@@ -1,0 +1,20 @@
+{
+  "name": "uae-construction-wp-client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WordPress REST API client for uae-construction.com",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "wp": "./src/cli.js"
+  },
+  "scripts": {
+    "wp": "node src/cli.js",
+    "posts": "node src/cli.js list-posts",
+    "pages": "node src/cli.js list-pages",
+    "media": "node src/cli.js list-media",
+    "site": "node src/cli.js site"
+  }
+}
